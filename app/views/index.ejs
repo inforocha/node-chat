@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+<body>
+    <div class="page">
+        <div class="marvel-device">
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="volume"></div>
+            <div class="camera">
+                <input type="file" id="input-files">
+                <button id="send-file">Enviar</button>
+            </div>
+            <div class="screen">
+                
+                    <% include chat/areaChat.ejs %>
+                    <% include chat/menuLateralEsquerdo.ejs %>
+                    <% include chat/menuLateralDireito.ejs %>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/publishSubscribe.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="js/socketIoIndex.js"></script>
+<script type="text/javascript" src="js/enviarArquivo.js"></script>
+</html>
