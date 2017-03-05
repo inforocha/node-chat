@@ -1,0 +1,14 @@
+{
+  "name": "chat",
+  "description": "chat teste",
+  "main": "app.js",
+  "authors": [
+    "Davi Samuel"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/inforocha/node-chat",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "Font-Awesome#^4.7.0"
+  }
+}

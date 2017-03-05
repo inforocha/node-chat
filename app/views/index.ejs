@@ -1,7 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/css.css">
     </head>
 <body>
@@ -15,19 +14,20 @@
                 <button id="send-file">Enviar</button>
             </div>
             <div class="screen">
-                
-                    <% include chat/areaChat.ejs %>
-                    <% include chat/menuLateralEsquerdo.ejs %>
-                    <% include chat/menuLateralDireito.ejs %>
-                
+                <% include chat/areaChat.ejs %>
+                <% include chat/menuLateralEsquerdo.ejs %>
+                <% include chat/menuLateralDireito.ejs %>
             </div>
         </div>
     </div>
 </div>
 </body>
+<!-- terceiros -->
+<script src="jQuery/dist/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<!-- proprietario -->
 <script type="text/javascript" src="js/publishSubscribe.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
-<script src="/socket.io/socket.io.js"></script>
 <script type="text/javascript" src="js/socketIoIndex.js"></script>
 <script type="text/javascript" src="js/enviarArquivo.js"></script>
 </html>
