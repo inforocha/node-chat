@@ -2,8 +2,9 @@
 (function(btn) {
 	var obj = {
 		init: function() {
+			this.socket = io.connect();
 			// this.socket = io.connect('http://10.0.0.4:3000');
-			this.socket = io.connect('localhost:3000');
+			// this.socket = io.connect('localhost:3000');
 			var that = this;
 			$(function() {
 				that.cacheDom();
